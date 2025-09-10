@@ -1,0 +1,45 @@
+# Obsidian
+.obsidian/workspace*
+.obsidian/cache/
+.obsidian/graph.json
+.obsidian/workspace-mobile.json
+
+# 临时文件
+*.tmp
+*.temp
+.DS_Store
+Thumbs.db
+
+# 敏感信息（如果有的话）
+private/
+secrets/
+*.key
+*.env
+
+# VS Code (可选，根据团队需要决定)
+# .vscode/
+
+# 系统文件
+.system/
+.trash/
+
+# 大型附件文件（根据需要调整）
+# attachments/*.mp4
+# attachments/*.mov
+# attachments/*.avi
+
+# Node.js (如果使用相关工具)
+node_modules/
+npm-debug.log*
+
+# Python (如果使用相关脚本)
+__pycache__/
+*.pyc
+*.pyo
+
+# 备份文件
+*.bak
+*.backup
+
+# 日志文件
+*.log

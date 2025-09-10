@@ -1,0 +1,82 @@
+{
+  "Daily Note Header": {
+    "scope": "markdown",
+    "prefix": "daily",
+    "body": [
+      "# ${CURRENT_YEAR}-${CURRENT_MONTH}-${CURRENT_DATE}",
+      "",
+      "## 📅 今日计划",
+      "- [ ] $1",
+      "",
+      "## 📝 笔记",
+      "$2",
+      "",
+      "## 🎯 今日总结",
+      "$3",
+      "",
+      "---",
+      "**标签**: #日记 #${CURRENT_YEAR} #${CURRENT_MONTH}",
+      "**创建时间**: ${CURRENT_YEAR}-${CURRENT_MONTH}-${CURRENT_DATE} ${CURRENT_HOUR}:${CURRENT_MINUTE}"
+    ],
+    "description": "创建日记笔记模板"
+  },
+  "Project Note": {
+    "scope": "markdown",
+    "prefix": "project",
+    "body": [
+      "# $1 项目笔记",
+      "",
+      "## 📋 项目概述",
+      "- **项目名称**: $1",
+      "- **开始时间**: ${CURRENT_YEAR}-${CURRENT_MONTH}-${CURRENT_DATE}",
+      "- **负责人**: $2",
+      "- **状态**: $3",
+      "",
+      "## 🎯 目标",
+      "$4",
+      "",
+      "## 📊 进度跟踪",
+      "- [ ] $5",
+      "",
+      "## 📝 会议纪要",
+      "$6",
+      "",
+      "## 🔗 相关资源",
+      "$7",
+      "",
+      "---",
+      "**标签**: #项目 #$1",
+      "**创建时间**: ${CURRENT_YEAR}-${CURRENT_MONTH}-${CURRENT_DATE}"
+    ],
+    "description": "创建项目笔记模板"
+  },
+  "Meeting Note": {
+    "scope": "markdown", 
+    "prefix": "meeting",
+    "body": [
+      "# $1 会议纪要",
+      "",
+      "## 📅 会议信息",
+      "- **时间**: ${CURRENT_YEAR}-${CURRENT_MONTH}-${CURRENT_DATE} ${CURRENT_HOUR}:${CURRENT_MINUTE}",
+      "- **参与人**: $2",
+      "- **主持人**: $3",
+      "",
+      "## 📋 议程",
+      "1. $4",
+      "",
+      "## 💡 讨论要点",
+      "$5",
+      "",
+      "## ✅ 行动项",
+      "- [ ] $6 (@$7 - $8)",
+      "",
+      "## 📄 附件",
+      "$9",
+      "",
+      "---",
+      "**标签**: #会议 #$1",
+      "**下次会议**: $10"
+    ],
+    "description": "创建会议纪要模板"
+  }
+}
