@@ -1,0 +1,32 @@
+{
+  "foam.edit.linkReferenceDefinitions": "withoutExtensions",
+  "foam.completion.enabled": true,
+  "foam.graph.titleMaxLength": 50,
+  "markdown.suggest.paths.enabled": true,
+  "markdown.updateLinksOnFileMove.enabled": "prompt",
+  "pasteImage.path": "${currentFileDir}/attachments",
+  "pasteImage.showFilePathConfirmInputBox": true,
+  "editor.minimap.enabled": false,
+  "editor.wrapping": "on",
+  "editor.overviewRulerBorder": false,
+  "editor.lineHeight": 24,
+  "workbench.colorTheme": "Default Light+",
+  "markdown.preview.fontSize": 14,
+  "markdown.preview.lineHeight": 1.6,
+  "foam.openDailyNote.directory": "daily-notes",
+  "foam.openDailyNote.titleFormat": "yyyy-MM-dd",
+  "foam.dateSnippets.afterCompletion": "createNote",
+  "editor.bracketPairColorization.enabled": true,
+  "editor.guides.bracketPairs": true,
+  "files.defaultLanguage": "markdown",
+  "files.associations": {
+    "*.md": "markdown"
+  },
+  "explorer.sortOrder": "type",
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/bower_components": true,
+    "**/*.code-search": true,
+    "**/attachments": true
+  }
+}

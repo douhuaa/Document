@@ -1,0 +1,11 @@
+{
+  "purpose": "Personal Knowledge Management with Foam + GitHub Copilot",
+  "enableWikiLinks": true,
+  "enablePreview": true,
+  "completionEnabled": true,
+  "generateToc": true,
+  "experimentalFeatures": {
+    "backlinks": true,
+    "references": true
+  }
+}
