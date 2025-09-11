@@ -1,6 +1,7 @@
 # 文档生成模板提示词
 
 ## 提示词类别
+
 - [ ] 代码生成
 - [ ] 代码优化
 - [ ] 代码解释
@@ -9,12 +10,14 @@
 - [ ] 代码重构
 
 ## 应用场景
+
 用于生成项目文档、API文档、代码注释、用户手册等各种类型的技术文档。
 
 ## 提示词内容
 
 ### 1. API文档生成
-```
+
+```javascript
 // 为以下API端点生成完整的文档
 // 端点信息：${HTTP方法} ${路径}
 // 功能描述：${端点的主要功能}
@@ -25,10 +28,11 @@
 // 错误码说明：${可能的错误码及其含义}
 
 ${贴入API代码或路由定义}
-```
+```javascript
 
 ### 2. 函数/类文档生成
-```
+
+```javascript
 // 为以下代码生成详细的文档注释
 // 注释风格：${JSDoc/PyDoc/GoDoc等}
 // 包含内容：功能描述、参数说明、返回值、异常、示例
@@ -37,10 +41,11 @@ ${贴入API代码或路由定义}
 // 注意事项：${使用时需要注意的问题}
 
 ${贴入需要文档化的代码}
-```
+```javascript
 
 ### 3. 项目README生成
-```
+
+```javascript
 // 为项目生成README文档
 // 项目类型：${Web应用/库/工具/API等}
 // 技术栈：${使用的主要技术和框架}
@@ -49,7 +54,7 @@ ${贴入需要文档化的代码}
 // 使用指南：${基本使用方法和示例}
 // 贡献指南：${如何参与项目开发}
 // 许可证：${开源许可证类型}
-```
+```javascript
 
 ## 示例输入
 
@@ -106,7 +111,7 @@ app.post('/api/users', authenticateAdmin, async (req, res) => {
         res.status(500).json({ error: '服务器内部错误' });
     }
 });
-```
+```javascript
 
 ## 预期输出
 
@@ -128,18 +133,19 @@ POST /api/users HTTP/1.1
 Host: api.example.com
 Content-Type: application/json
 Authorization: Bearer {admin_token}
-```
+```javascript
 
 ### 请求参数
 
 | 参数名 | 类型 | 必需 | 描述 | 示例 |
 |--------|------|------|------|------|
 | name | string | ✅ | 用户姓名 | "张三" |
-| email | string | ✅ | 用户邮箱 | "zhangsan@example.com" |
+| email | string | ✅ | 用户邮箱 | "<zhangsan@example.com>" |
 | role | string | ❌ | 用户角色，默认为 "user" | "admin", "user", "viewer" |
 | department | string | ❌ | 所属部门 | "技术部" |
 
 ### 请求体示例
+
 ```json
 {
   "name": "张三",
@@ -147,11 +153,12 @@ Authorization: Bearer {admin_token}
   "role": "user",
   "department": "技术部"
 }
-```
+```javascript
 
 ## 响应格式
 
 ### 成功响应 (201 Created)
+
 ```json
 {
   "message": "用户创建成功",
@@ -164,48 +171,54 @@ Authorization: Bearer {admin_token}
     "createdAt": "2024-01-20T10:30:00.000Z"
   }
 }
-```
+```javascript
 
 ## 错误响应
 
 ### 400 Bad Request - 参数错误
+
 ```json
 {
   "error": "姓名和邮箱为必填项"
 }
-```
+```javascript
 
 ### 401 Unauthorized - 未认证
+
 ```json
 {
   "error": "未提供有效的认证令牌"
 }
-```
+```javascript
 
 ### 403 Forbidden - 权限不足
+
 ```json
 {
   "error": "需要管理员权限"
 }
-```
+```javascript
 
 ### 409 Conflict - 邮箱已存在
+
 ```json
 {
   "error": "该邮箱已被注册"
 }
-```
+```javascript
 
 ### 500 Internal Server Error - 服务器错误
+
 ```json
 {
   "error": "服务器内部错误"
 }
-```
+```javascript
 
 ## 代码示例
 
 ### cURL
+
 ```bash
 curl -X POST "https://api.example.com/api/users" \
   -H "Content-Type: application/json" \
@@ -216,9 +229,10 @@ curl -X POST "https://api.example.com/api/users" \
     "role": "user",
     "department": "技术部"
   }'
-```
+```javascript
 
 ### JavaScript (fetch)
+
 ```javascript
 async function createUser(userData, adminToken) {
   try {
@@ -255,9 +269,10 @@ const newUser = {
 createUser(newUser, 'your_admin_token_here')
   .then(result => console.log('用户创建成功:', result))
   .catch(error => console.error('错误:', error.message));
-```
+```javascript
 
 ### Python (requests)
+
 ```python
 import requests
 
@@ -289,7 +304,7 @@ try:
     print("用户创建成功:", result)
 except Exception as e:
     print("错误:", str(e))
-```
+```javascript
 
 ## 业务逻辑
 
@@ -313,7 +328,8 @@ except Exception as e:
 - [获取用户详情](./get-user.md) - `GET /api/users/:id`
 - [更新用户信息](./update-user.md) - `PUT /api/users/:id`
 - [删除用户](./delete-user.md) - `DELETE /api/users/:id`
-```
+
+```javascript
 
 ## 使用技巧
 - 明确文档的目标读者（开发者、最终用户、运维等）

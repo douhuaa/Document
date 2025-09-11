@@ -1,6 +1,7 @@
 # 单元测试生成提示词
 
 ## 提示词类别
+
 - [ ] 代码生成
 - [ ] 代码优化
 - [ ] 代码解释
@@ -9,12 +10,14 @@
 - [ ] 代码重构
 
 ## 应用场景
+
 为现有函数、类或模块快速生成全面的单元测试用例。
 
 ## 提示词内容
 
 ### 1. 基础测试生成
-```
+
+```javascript
 // 为以下函数创建完整的单元测试
 // 测试框架: [Jest/Mocha/pytest等]
 // 需要测试的场景:
@@ -24,20 +27,22 @@
 // - 输入验证
 
 [贴入要测试的函数代码]
-```
+```javascript
 
 ### 2. 类方法测试
-```
+
+```javascript
 // 为以下类创建单元测试套件
 // 测试所有公共方法
 // 包含mock外部依赖
 // 验证状态变化和副作用
 
 [贴入类定义代码]
-```
+```javascript
 
 ### 3. API 端点测试
-```
+
+```javascript
 // 创建以下 API 端点的测试用例
 // 端点: [HTTP方法] [路径]
 // 测试场景:
@@ -49,7 +54,7 @@
 // - 服务器错误 (500)
 
 [贴入路由处理器代码]
-```
+```javascript
 
 ## 示例输入
 
@@ -83,7 +88,7 @@ function calculateDiscount(price, discountPercent, customerType) {
     
     return price * (1 - finalDiscount / 100);
 }
-```
+```javascript
 
 ## 预期输出
 
@@ -153,20 +158,23 @@ describe('calculateDiscount', () => {
         });
     });
 });
-```
+```javascript
 
 ## 使用技巧
+
 - 明确指定要使用的测试框架
 - 列出需要覆盖的测试场景类型
 - 包含对外部依赖的mock说明
 - 考虑异步函数的测试需求
 
 ## 效果评估
+
 **准确性**: ⭐⭐⭐⭐⭐  
 **实用性**: ⭐⭐⭐⭐⭐  
 **创新性**: ⭐⭐⭐⭐⭐  
 
 ## 相关链接
+
 - [[code-generation-basics]]
 - [[error-handling]]
 - [[api-integration]]

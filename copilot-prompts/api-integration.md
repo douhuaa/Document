@@ -1,6 +1,7 @@
 # API集成开发提示词
 
 ## 提示词类别
+
 - [x] 代码生成
 - [ ] 代码优化
 - [ ] 代码解释
@@ -9,12 +10,14 @@
 - [ ] 代码重构
 
 ## 应用场景
+
 用于生成RESTful API调用代码、GraphQL查询、WebSocket连接等各种API集成相关的代码。
 
 ## 提示词内容
 
 ### 1. REST API客户端生成
-```
+
+```javascript
 // 创建一个API客户端类 ${API名称}Client
 // 基础URL：${API基础地址}
 // 认证方式：${Bearer Token/API Key/OAuth等}
@@ -25,20 +28,22 @@
 // - DELETE ${端点路径}：${功能描述}
 // 错误处理：统一的错误处理和重试机制
 // 响应格式：JSON
-```
+```javascript
 
 ### 2. GraphQL查询生成
-```
+
+```javascript
 // 创建GraphQL查询函数
 // Schema：${GraphQL schema描述}
 // 查询类型：${Query/Mutation/Subscription}
 // 需要的字段：${列出需要获取的字段}
 // 变量：${查询变量及类型}
 // 错误处理：${GraphQL错误处理方式}
-```
+```javascript
 
 ### 3. 异步请求封装
-```
+
+```javascript
 // 创建一个通用的HTTP请求函数
 // 支持的方法：GET, POST, PUT, DELETE, PATCH
 // 功能特性：
@@ -48,7 +53,7 @@
 // - 重试机制
 // - 错误统一处理
 // - 加载状态管理
-```
+```javascript
 
 ## 示例输入
 
@@ -64,7 +69,7 @@
 // - DELETE /users/{id}：删除用户
 // 错误处理：统一的错误处理和重试机制
 // 响应格式：JSON
-```
+```javascript
 
 ## 预期输出
 
@@ -145,9 +150,10 @@ class UserApiClient {
         this.defaultHeaders.Authorization = `Bearer ${token}`;
     }
 }
-```
+```javascript
 
 ## 使用技巧
+
 - 明确指定API的认证方式和安全要求
 - 描述需要的错误处理策略（重试、超时等）
 - 说明数据格式和序列化要求
@@ -155,11 +161,13 @@ class UserApiClient {
 - 包含适当的日志和监控需求
 
 ## 效果评估
+
 **准确性**: ⭐⭐⭐⭐⭐  
 **实用性**: ⭐⭐⭐⭐⭐  
 **创新性**: ⭐⭐⭐⭐⭐  
 
 ## 相关链接
+
 - [[error-handling]]
 - [[rest-api-design]]
 - [[unit-test-generation]]

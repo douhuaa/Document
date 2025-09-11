@@ -1,6 +1,7 @@
 # 性能优化提示词
 
 ## 提示词类别
+
 - [ ] 代码生成
 - [x] 代码优化
 - [ ] 代码解释
@@ -9,12 +10,14 @@
 - [x] 代码重构
 
 ## 应用场景
+
 用于识别和优化代码性能瓶颈，包括算法优化、内存管理、并发处理和资源使用优化。
 
 ## 提示词内容
 
 ### 1. 算法性能优化
-```
+
+```javascript
 // 优化以下代码的性能
 // 当前复杂度：${时间复杂度和空间复杂度}
 // 性能问题：${具体的性能瓶颈}
@@ -23,10 +26,11 @@
 // 约束条件：${内存限制/兼容性要求等}
 
 ${需要优化的代码}
-```
+```javascript
 
 ### 2. 前端性能优化
-```
+
+```javascript
 // 优化以下前端代码的性能
 // 问题类型：${渲染慢/内存泄漏/包体积大/首屏加载慢}
 // 目标指标：${LCP/FID/CLS等Core Web Vitals}
@@ -34,10 +38,11 @@ ${需要优化的代码}
 // 优化方向：${代码分割/懒加载/缓存/压缩等}
 
 ${前端代码}
-```
+```javascript
 
 ### 3. 后端性能优化
-```
+
+```javascript
 // 优化后端服务性能
 // 性能瓶颈：${CPU密集/IO密集/内存使用/数据库查询}
 // 并发需求：${QPS要求和并发用户数}
@@ -45,7 +50,7 @@ ${前端代码}
 // 优化策略：${缓存/连接池/异步处理/负载均衡}
 
 ${后端代码}
-```
+```javascript
 
 ## 示例输入
 
@@ -74,7 +79,7 @@ function findDuplicates(arr) {
 // 使用场景
 const largeArray = generateLargeArray(500000);
 const result = findDuplicates(largeArray);
-```
+```javascript
 
 ## 预期输出
 
@@ -296,9 +301,10 @@ const optimizedResult = findDuplicatesOptimized(largeArray);
 console.timeEnd('优化版本');
 
 console.log(`找到 ${optimizedResult.length} 个重复元素`);
-```
+```javascript
 
 ## 使用技巧
+
 - 明确性能瓶颈的具体类型（CPU/内存/IO等）
 - 提供具体的性能目标和约束条件
 - 考虑不同数据规模下的表现
@@ -306,11 +312,13 @@ console.log(`找到 ${optimizedResult.length} 个重复元素`);
 - 权衡时间复杂度和空间复杂度
 
 ## 效果评估
+
 **准确性**: ⭐⭐⭐⭐⭐  
 **实用性**: ⭐⭐⭐⭐⭐  
 **创新性**: ⭐⭐⭐⭐⭐  
 
 ## 相关链接
+
 - [[algorithm-optimization]]
 - [[database-queries]]
 - [[debugging-prompts]]

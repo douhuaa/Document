@@ -1,6 +1,7 @@
 # 代码注释优化提示词
 
 ## 提示词类别
+
 - [ ] 代码生成
 - [x] 代码优化
 - [ ] 代码解释
@@ -9,12 +10,14 @@
 - [ ] 代码重构
 
 ## 应用场景
+
 为现有代码添加高质量的注释，包括函数说明、复杂逻辑解释、API文档注释等。
 
 ## 提示词内容
 
 ### 1. 函数注释生成
-```
+
+```javascript
 // 为以下函数添加详细的注释
 // 注释标准：${JSDoc/PyDoc/GoDoc/XML Doc等}
 // 包含内容：功能描述、参数说明、返回值、异常、示例
@@ -22,27 +25,29 @@
 // 详细程度：${简洁/标准/详细}
 
 ${需要添加注释的函数代码}
-```
+```javascript
 
 ### 2. 复杂逻辑注释
-```
+
+```javascript
 // 为以下复杂代码添加逐行解释注释
 // 重点说明：算法思路、关键步骤、边界处理
 // 注释风格：${行内注释/块注释/分段说明}
 // 目标读者：${初级/中级/高级开发者}
 
 ${复杂的算法或业务逻辑代码}
-```
+```javascript
 
 ### 3. 类/模块注释
-```
+
+```javascript
 // 为以下类或模块添加完整的文档注释
 // 包含内容：类的用途、设计模式、使用示例、注意事项
 // 关联说明：依赖关系、继承关系、接口实现
 // 版本信息：创建时间、作者、版本历史
 
 ${类或模块代码}
-```
+```javascript
 
 ## 示例输入
 
@@ -95,7 +100,7 @@ function processUserData(users, filters, options) {
     
     return options.sortBy ? result.sort((a, b) => a[options.sortBy].localeCompare(b[options.sortBy])) : result;
 }
-```
+```javascript
 
 ## 预期输出
 
@@ -221,7 +226,7 @@ function processUserData(users, filters, options) {
         ? result.sort((a, b) => a[options.sortBy].localeCompare(b[options.sortBy])) 
         : result;
 }
-```
+```javascript
 
 ```javascript
 /**
@@ -267,9 +272,10 @@ class UserDataProcessor {
     
     // ... 其他方法的注释
 }
-```
+```javascript
 
 ## 使用技巧
+
 - 根据代码复杂度调整注释详细程度
 - 优先注释公开接口和复杂算法
 - 使用标准的文档注释格式（JSDoc等）
@@ -277,11 +283,13 @@ class UserDataProcessor {
 - 及时更新注释以保持与代码同步
 
 ## 效果评估
+
 **准确性**: ⭐⭐⭐⭐⭐  
 **实用性**: ⭐⭐⭐⭐⭐  
 **创新性**: ⭐⭐⭐⭐⭐  
 
 ## 相关链接
+
 - [[documentation-templates]]
 - [[code-generation-basics]]
 - [[api-integration]]

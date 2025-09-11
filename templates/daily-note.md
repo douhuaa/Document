@@ -1,7 +1,8 @@
 # ${FOAM_DATE_YEAR}-${FOAM_DATE_MONTH}-${FOAM_DATE_DATE}
 
 ## 今日目标
-- [ ] 
+
+- [ ]
 
 ## 学习笔记
 
@@ -12,6 +13,7 @@
 ## 思考与反思
 
 ## 链接
+
 - [[${FOAM_DATE_YEAR_SHORT}${FOAM_DATE_MONTH}${FOAM_DATE_DATE}]]
 
 ---
