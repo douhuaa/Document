@@ -34,8 +34,8 @@
 ├── 📁 resources/            # 参考资源
 ├── 📁 inbox/                # 待整理内容
 ├── 📁 attachments/          # 附件文件
-└── 📁 .vscode/              # VS Code 配置
-```javascript
+└── 📁 .vscode/              # VS 
+```
 
 ## 🎯 主要功能
 
