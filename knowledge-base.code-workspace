@@ -1,0 +1,54 @@
+{
+  "folders": [
+    {
+      "name": "Knowledge Base",
+      "path": "."
+    }
+  ],
+  "settings": {
+    "markdown.preview.enhance": true,
+    "markdown.extension.toc.levels": "1..6",
+    "markdown.extension.tableFormatter.enable": true,
+    "files.defaultLanguage": "markdown",
+    "files.associations": {
+      "*.md": "markdown"
+    },
+    "editor.wordWrap": "on",
+    "editor.lineNumbers": "on",
+    "editor.minimap.enabled": true,
+    "editor.folding": true,
+    "editor.foldingStrategy": "indentation",
+    "workbench.colorTheme": "Default Dark+",
+    "git.enableSmartCommit": true,
+    "git.confirmSync": false,
+    "git.autofetch": true,
+    "github.copilot.enable": {
+      "*": true,
+      "yaml": true,
+      "plaintext": true,
+      "markdown": true
+    },
+    "github.copilot.inlineSuggest.enable": true,
+    "editor.suggest.snippetsPreventQuickSuggestions": false,
+    "editor.tabCompletion": "on",
+    "editor.quickSuggestions": {
+      "other": true,
+      "comments": false,
+      "strings": true
+    }
+  },
+  "extensions": {
+    "recommendations": [
+      "github.copilot",
+      "github.copilot-chat", 
+      "yzhang.markdown-all-in-one",
+      "mushan.vscode-paste-image",
+      "eamodio.gitlens",
+      "foam.foam-vscode",
+      "bierner.markdown-mermaid",
+      "davidanson.vscode-markdownlint",
+      "tchayen.markdown-links",
+      "ms-vscode.vscode-json"
+    ]
+  }
+}
