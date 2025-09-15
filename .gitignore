@@ -1,0 +1,42 @@
+# Foam-specific
+.foam/logs/
+.foam/templates/cache/
+
+# VS Code
+.vscode/settings.json.bak
+.vscode/launch.json
+.vscode/tasks.json
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.temp
+.temp/
+/tmp/
+
+# Logs
+*.log
+logs/
+
+# Dependencies (if any)
+node_modules/
+.npm
+.yarn
+
+# Build outputs (if any)
+dist/
+build/
+out/
+
+# Personal/sensitive
+private/
+.env
+.env.local
+
+# Backup files
+*~
+*.bak
+*.backup

@@ -1,0 +1,51 @@
+# ${FOAM_TITLE}
+
+## 提示词类别
+
+- [ ] 代码生成
+- [ ] 代码优化
+- [ ] 代码解释
+- [ ] 测试生成
+- [ ] 文档生成
+- [ ] 代码重构
+
+## 应用场景
+
+描述该提示词的具体使用场景...
+
+## 提示词内容
+
+```javascript
+在这里编写完整的提示词...
+```javascript
+
+## 示例输入
+
+```javascript
+// 示例输入代码或需求描述
+```javascript
+
+## 预期输出
+
+```javascript
+// Copilot 预期生成的代码或内容
+```javascript
+
+## 使用技巧
+
+-
+-
+
+## 效果评估
+
+**准确性**: ⭐⭐⭐⭐⭐  
+**实用性**: ⭐⭐⭐⭐⭐  
+**创新性**: ⭐⭐⭐⭐⭐  
+
+## 相关链接
+
+- [[]]
+
+---
+*Created: ${FOAM_DATE_YEAR}-${FOAM_DATE_MONTH}-${FOAM_DATE_DATE}*  
+*Tags: #copilot-prompt #${FOAM_TITLE}*
